@@ -107,7 +107,7 @@ export default function Home() {
           relative min-h-screen
           flex items-start
           px-6 md:px-16
-          pt-32
+          pt-24 md:pt-32
           overflow-hidden
           bg-gradient-to-br from-[#020617] via-[#020617] to-black
         "
@@ -196,7 +196,7 @@ export default function Home() {
               I craft immersive, cinematic web experiences that feel alive.
             </p>
 
-            <motion.div variants={item} className="mt-14 flex gap-8 flex-wrap">
+            <motion.div variants={item} className="mt-10 flex flex-col sm:flex-row gap-6">
               <MagneticButton
                 primary
                 onClick={() =>

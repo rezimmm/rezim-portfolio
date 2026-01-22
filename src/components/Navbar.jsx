@@ -91,7 +91,7 @@ export default function Navbar() {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-4 inset-x-0 mx-auto z-50 w-[92%] max-w-5xl"
+      className="fixed top-4 inset-x-0 mx-auto z-50 w-[94%] sm:w-[92%] max-w-5xl"
     >
       {/* DESKTOP BAR */}
       <div
@@ -133,6 +133,19 @@ export default function Navbar() {
           ))}
         </div>
 
+        <a
+          href={
+            import.meta.env.PROD
+              ? "https://rezimmmm.github.io/rezim-admin/"
+              : "http://localhost:5174/admin/login"
+          }
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden md:block text-sm text-white/70 hover:text-white"
+        >
+          Admin
+        </a>
+
         {/* CTA */}
         <motion.a
           href="https://mail.google.com/mail/?view=cm&fs=1&to=rezimtitoria04@gmail.com"
@@ -141,14 +154,15 @@ export default function Navbar() {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.96 }}
           className="
-    group relative overflow-hidden
-    px-5 py-2.5 rounded-full
-    bg-white text-black
-    text-sm font-semibold
-    flex items-center gap-3
-    transition-all duration-300
-    hover:shadow-[0_0_30px_rgba(59,130,246,0.45)]
-  "
+            hidden md:flex
+            group relative overflow-hidden
+            px-5 py-2.5 rounded-full
+            bg-white text-black
+            text-sm font-semibold
+            items-center gap-3
+            transition-all duration-300
+            hover:shadow-[0_0_30px_rgba(59,130,246,0.45)]
+          "
         >
           {/* Gmail SVG Icon */}
           <motion.div
@@ -195,6 +209,7 @@ export default function Navbar() {
             p-6 flex flex-col gap-4
           "
         >
+          {/* Mobile nav links */}
           {links.map((link) => (
             <button
               key={link.id}
@@ -209,13 +224,34 @@ export default function Navbar() {
             </button>
           ))}
 
+          {/* Divider */}
+          <div className="h-px bg-white/10 my-2" />
+
+          {/* Admin link (mobile) */}
+          <a
+            href={
+              import.meta.env.PROD
+                ? "https://rezimmmm.github.io/rezim-admin/"
+                : "http://localhost:5174/admin/login"
+            }
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-center px-4 py-2 rounded-full
+                       border border-white/20
+                       text-white/80 hover:bg-white/10 transition"
+          >
+            Admin Login
+          </a>
+
+          {/* Email CTA (mobile only) */}
           <a
             href="mailto:rezimtitoria04@gmail.com"
-            className="mt-3 px-4 py-2 rounded-full bg-white text-black text-center font-medium"
+            className="px-4 py-2 rounded-full
+                       bg-white text-black
+                       text-center font-medium"
           >
             Email Me
           </a>
-
         </motion.div>
       )}
     </motion.nav>

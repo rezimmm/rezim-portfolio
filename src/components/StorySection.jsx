@@ -16,7 +16,7 @@ export default function StorySection({ children, className = "", id }) {
     <section
       ref={containerRef}
       id={id}
-      className={`relative min-h-[160vh] ${className}`}
+      className={`relative min-h-screen md:min-h-[160vh] ${className}`}
     >
       {/* 🔥 THIS IS THE FIX */}
       <div
@@ -26,7 +26,11 @@ export default function StorySection({ children, className = "", id }) {
 
       <motion.div
         style={{ y, opacity }}
-        className="sticky top-24 h-[calc(100vh-6rem)] flex items-center"
+        className="
+          md:sticky md:top-24 
+          h-auto md:h-[calc(100vh-6rem)] 
+          flex items-center 
+        "
       >
         <div className="w-full">{children}</div>
       </motion.div>
