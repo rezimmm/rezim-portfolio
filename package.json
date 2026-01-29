@@ -5,6 +5,7 @@
   "type": "module",
   "homepage": "https://rezimmm.github.io/rezim-portfolio",
   "scripts": {
+    "start": "node server.js",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
