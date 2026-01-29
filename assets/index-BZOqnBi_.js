@@ -20,27 +20,30 @@ Please change the parent <Route path="${R}"> to <Route path="${R==="/"?"*":`${R}
         relative min-h-screen\r
         pt-24 md:pt-32\r
         overflow-hidden\r
-        bg-gradient-to-br from-[#020617] via-[#020617] to-black\r
-      `,children:[re.jsx("div",{className:"pointer-events-none absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#020617] to-transparent z-10"}),re.jsxs("div",{className:"absolute inset-0 overflow-hidden -z-10",children:[re.jsx("div",{className:"absolute w-[500px] h-[500px] bg-blue-500/30 blur-[160px] rounded-full -top-40 -left-40"}),re.jsx("div",{className:"absolute w-[400px] h-[400px] bg-cyan-400/20 blur-[160px] rounded-full bottom-[-200px] right-[-100px]"})]}),re.jsx("div",{className:"w-full overflow-hidden",children:re.jsxs(Yn.div,{variants:C,initial:"hidden",animate:"show",className:`\r
-            relative z-10\r
-            w-full max-w-7xl mx-auto\r
-            px-6 md:px-16\r
-            grid md:grid-cols-2\r
-            items-center gap-24\r
-          `,children:[re.jsxs(Yn.div,{variants:w,className:"max-w-xl",style:{translateX:x.x*.4,translateY:x.y*.4},children:[re.jsxs(Yn.h1,{className:`\r
-                text-4xl sm:text-5xl md:text-7xl\r
-                font-extrabold mb-6\r
-                flex flex-wrap items-center gap-1\r
-              `,children:[re.jsx("span",{className:"text-white",children:n.startsWith("Hi, I’m")?"Hi, I’m ":n}),n.includes("Rezim")&&re.jsx("span",{className:"text-blue-500 drop-shadow-[0_0_30px_rgba(59,130,246,1)]",children:"Rezim"}),t<kv.length&&re.jsx(Yn.span,{className:"ml-1 text-blue-400",animate:{opacity:[0,1,0]},transition:{repeat:1/0,duration:.9},children:"|"}),t>=kv.length&&re.jsx(Yn.span,{className:"ml-2 inline-block",animate:{rotate:[0,20,-10,20,0]},transition:{duration:1.2,repeat:1/0,repeatDelay:2},children:"👋"})]}),re.jsxs("h2",{className:"text-2xl md:text-4xl font-semibold text-slate-300 min-h-[3rem]",children:[re.jsx("span",{className:"text-blue-400",children:s}),re.jsx(Yn.span,{animate:{opacity:[0,1,0]},transition:{repeat:1/0,duration:1},className:"ml-1 text-blue-400",children:"|"})]}),re.jsx("p",{className:"mt-8 text-lg md:text-xl text-slate-400",children:"I craft immersive, cinematic web experiences that feel alive."}),re.jsxs(Yn.div,{variants:w,className:"mt-10 flex flex-col sm:flex-row gap-6",children:[re.jsx(iA,{primary:!0,onClick:()=>document.getElementById("projects")?.scrollIntoView({behavior:"smooth"}),children:"View Projects"}),re.jsx(iA,{onClick:()=>document.getElementById("contact")?.scrollIntoView({behavior:"smooth"}),children:"Contact Me"})]})]}),re.jsxs(Yn.div,{variants:w,whileHover:{scale:1.05},className:"relative mx-auto mt-10 md:mt-0",children:[re.jsx("div",{className:"hidden md:block absolute -inset-6 rounded-full bg-blue-500/20 blur-3xl -z-10"}),re.jsx("div",{className:`\r
-      relative\r
-      w-[220px] h-[220px]\r
-      md:w-[320px] md:h-[320px]\r
-      rounded-full\r
-      overflow-hidden\r
-      border border-white/25\r
-      bg-[#020617]\r
-      shadow-[0_0_60px_rgba(59,130,246,0.35)]\r
-    `,children:re.jsx("img",{src:K5,alt:"Rezim",className:"w-full h-full object-cover"})})]})]})})]})}function iA({children:n,onClick:e,primary:t}){const[i,s]=j.useState({x:0,y:0});return re.jsx(Yn.div,{onMouseMove:o=>{const u=o.currentTarget.getBoundingClientRect();s({x:(o.clientX-u.left-u.width/2)*.2,y:(o.clientY-u.top-u.height/2)*.2})},onMouseLeave:()=>s({x:0,y:0}),animate:{x:i.x,y:i.y},transition:{type:"spring",stiffness:150,damping:15},children:re.jsx("button",{onClick:e,className:`px-10 py-4 rounded-full text-lg transition ${t?"bg-blue-600 shadow-xl shadow-blue-500/40 hover:bg-blue-500":"border border-white/30 hover:bg-white/10"}`,children:n})})}function Q5({children:n,className:e="",id:t}){const i=j.useRef(null),{scrollYProgress:s}=aD({target:i,offset:["start end","end start"]}),o=eA(s,[0,1],[80,-80]),u=eA(s,[0,.2,.8,1],[0,1,1,0]);return re.jsxs("section",{ref:i,id:t,className:`relative min-h-screen md:min-h-[160vh] ${e}`,children:[re.jsx("div",{id:`${t}-anchor`,className:"absolute top-[45vh] left-0 w-full h-px"}),re.jsx(Yn.div,{style:{y:o,opacity:u},className:`\r
+        bg-[#020617]\r
+      `,children:[re.jsx("div",{className:"absolute inset-0 -z-20 bg-gradient-to-r from-[#020617] via-[#020617] to-[#020617]"}),re.jsx("div",{className:`pointer-events-none absolute top-0 left-0 w-full h-32\r
+                      bg-gradient-to-b from-[#020617] to-transparent z-10`}),re.jsx("div",{className:`pointer-events-none absolute inset-x-0 bottom-0 h-40\r
+                      bg-gradient-to-t from-[#020617] to-transparent z-10`}),re.jsxs("div",{className:"absolute inset-0 overflow-hidden -z-10",children:[re.jsx("div",{className:"absolute w-[600px] h-[600px] bg-blue-600/25 blur-[180px] rounded-full -top-48 -left-48"}),re.jsx("div",{className:"absolute w-[500px] h-[500px] bg-cyan-400/20 blur-[200px] rounded-full bottom-[-220px] right-[-140px]"})]}),re.jsxs(Yn.div,{variants:C,initial:"hidden",animate:"show",className:`\r
+          relative z-10\r
+          max-w-7xl mx-auto\r
+          px-6 md:px-16\r
+          grid md:grid-cols-2\r
+          items-center gap-24\r
+        `,children:[re.jsxs(Yn.div,{variants:w,className:"max-w-xl",style:{translateX:x.x*.4,translateY:x.y*.4},children:[re.jsxs(Yn.h1,{className:`\r
+    text-4xl sm:text-5xl md:text-7xl\r
+    font-extrabold mb-6\r
+    inline-flex items-center gap-2\r
+    whitespace-nowrap\r
+  `,children:[re.jsx("span",{className:"text-white",children:n.startsWith("Hi, I’m")?"Hi, I’m ":n}),n.includes("Rezim")&&re.jsx("span",{className:"text-blue-500 drop-shadow-[0_0_30px_rgba(59,130,246,1)]",children:"Rezim"}),t<kv.length&&re.jsx(Yn.span,{className:"text-blue-400",animate:{opacity:[0,1,0]},transition:{repeat:1/0,duration:.9},children:"|"}),t>=kv.length&&re.jsx(Yn.span,{className:"inline-flex items-center align-middle",animate:{rotate:[0,20,-10,20,0]},transition:{duration:1.2,repeat:1/0,repeatDelay:2},children:"👋"})]}),re.jsxs("h2",{className:"text-2xl md:text-4xl font-semibold text-slate-300 min-h-[3rem]",children:[re.jsx("span",{className:"text-blue-400",children:s}),re.jsx(Yn.span,{animate:{opacity:[0,1,0]},transition:{repeat:1/0,duration:1},className:"ml-1 text-blue-400",children:"|"})]}),re.jsx("p",{className:"mt-8 text-lg md:text-xl text-slate-400",children:"I craft immersive, cinematic web experiences that feel alive."}),re.jsxs(Yn.div,{variants:w,className:"mt-10 flex flex-col sm:flex-row gap-6",children:[re.jsx(iA,{primary:!0,onClick:()=>document.getElementById("projects")?.scrollIntoView({behavior:"smooth"}),children:"View Projects"}),re.jsx(iA,{onClick:()=>document.getElementById("contact")?.scrollIntoView({behavior:"smooth"}),children:"Contact Me"})]})]}),re.jsxs(Yn.div,{variants:w,whileHover:{scale:1.05},className:"relative mx-auto flex justify-center",children:[re.jsx("div",{className:"absolute -inset-24 bg-blue-600/20 blur-[220px] rounded-full"}),re.jsx("div",{className:`\r
+              relative\r
+              w-[220px] h-[220px]\r
+              md:w-[320px] md:h-[320px]\r
+              rounded-full\r
+              overflow-hidden\r
+              border border-white/10\r
+              bg-[#020617]\r
+              shadow-[0_0_90px_rgba(59,130,246,0.45)]\r
+            `,children:re.jsx("img",{src:K5,alt:"Rezim",className:"w-full h-full object-cover"})})]})]})]})}function iA({children:n,onClick:e,primary:t}){const[i,s]=j.useState({x:0,y:0});return re.jsx(Yn.div,{onMouseMove:o=>{const u=o.currentTarget.getBoundingClientRect();s({x:(o.clientX-u.left-u.width/2)*.2,y:(o.clientY-u.top-u.height/2)*.2})},onMouseLeave:()=>s({x:0,y:0}),animate:{x:i.x,y:i.y},transition:{type:"spring",stiffness:150,damping:15},children:re.jsx("button",{onClick:e,className:`px-10 py-4 rounded-full text-lg transition ${t?"bg-blue-600 shadow-xl shadow-blue-500/40 hover:bg-blue-500":"border border-white/30 hover:bg-white/10"}`,children:n})})}function Q5({children:n,className:e="",id:t}){const i=j.useRef(null),{scrollYProgress:s}=aD({target:i,offset:["start end","end start"]}),o=eA(s,[0,1],[80,-80]),u=eA(s,[0,.2,.8,1],[0,1,1,0]);return re.jsxs("section",{ref:i,id:t,className:`relative min-h-screen md:min-h-[160vh] ${e}`,children:[re.jsx("div",{id:`${t}-anchor`,className:"absolute top-[45vh] left-0 w-full h-px"}),re.jsx(Yn.div,{style:{y:o,opacity:u},className:`\r
           md:sticky md:top-24 \r
           h-auto md:h-[calc(100vh-6rem)] \r
           flex items-center \r
